@@ -1,80 +1,92 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.box:hover{
-    transform: scale(1.1);
-    transition: all 2s;
-}
-.container{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(9, 9, 87, 0.815);
+.card{
+    width: 280px;
+    height: 440px;
+    background-color: white;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    gap: 20px;
 }
-.box{
-    background-color:rgb(100, 16, 72) ;
-    height: 420px;
-    width: 750px;
-    display: flex;
-    flex-direction: row;
-    box-shadow: 1px 1px 60px black;
-
-}
-.leftbox{
-    height: 100%;
+img{
+    height: 130px;
     width: 100%;
-    border: 1px solid black;
-    display: flex;
+}
+.text{
+    display:flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    
-}
-.leftbox h1{
-    color: aliceblue;
-    padding-left: 15px;
-    box-shadow: 1px 1px 5px white ;
-
-}
-
-.text{
-    color: aliceblue;
+    width: 80%;
+    gap: 10px;
     font-family: 'Times New Roman', Times, serif;
-    padding: 15px;
-    box-shadow: 1px 1px 5px white ;
+    text-align: center;
 }
-.statsbox{
+#amountbox{
+    background-color: #80D0C7;
+    width: 220px;
+    height: 45px;
+    border-radius: 17px;
     display: flex;
-    gap:30px;
-    box-shadow: 1px 1px 5px white ;
+    align-items: center;
+    padding: 5px;
     
     
 }
-.statsbox p{
-    color: aliceblue;
-    
-    
+#button{
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;   
+    background-color: #0e1055;
+    color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: all 1.5s;
 }
-.head{
-    color: aliceblue;
-    font-size: large;
-    font-weight:900;
+#button:hover{
+    transform: scale(1.1);
+
+}
+.cacelbutton a{
+    text-decoration: none;
+    color: rgb(92, 85, 85);
+    font-weight: bold;
+}
+#amountbox img{
+    height: 40px;
+    width: 30px;
+    border-radius: 20px;
+    padding: 3px;
+    
+   
+}
+.plan{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    
+
 }
 
-.rightbox{
-    
-    height: 100%;
-    width:100%;
-    border: 1px solid black;
-}
-.rightbox img{
-    height: 100%;
-    width: 100%;
-    
+.change {
+    color: blue;
+    padding-left: 40px;
+
 
 }
